@@ -1,0 +1,31 @@
+<h1>Listing class_ind_grades</h1>
+
+<table>
+  <tr>
+    <th>Userid</th>
+    <th>Course</th>
+    <th>Name</th>
+    <th>Weight</th>
+    <th>Grade</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @class_ind_grades.each do |class_ind_grade| %>
+  <tr>
+    <td><%= class_ind_grade.userID %></td>
+    <td><%= class_ind_grade.course %></td>
+    <td><%= class_ind_grade.name %></td>
+    <td><%= class_ind_grade.weight %></td>
+    <td><%= class_ind_grade.grade %></td>
+    <td><%= link_to 'Show', class_ind_grade %></td>
+    <td><%= link_to 'Edit', edit_class_ind_grade_path(class_ind_grade) %></td>
+    <td><%= link_to 'Destroy', class_ind_grade, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Class ind grade', new_class_ind_grade_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  userID: 1
+  course: 1
+  name: MyString
+  weight: 1
+  grade: 1
+
+two:
+  userID: 1
+  course: 1
+  name: MyString
+  weight: 1
+  grade: 1

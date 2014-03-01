@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Userid:</b>
+  <%= @class_ind_grade.userID %>
+</p>
+
+<p>
+  <b>Course:</b>
+  <%= @class_ind_grade.course %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @class_ind_grade.name %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @class_ind_grade.weight %>
+</p>
+
+<p>
+  <b>Grade:</b>
+  <%= @class_ind_grade.grade %>
+</p>
+
+
+<%= link_to 'Edit', edit_class_ind_grade_path(@class_ind_grade) %> |
+<%= link_to 'Back', class_ind_grades_path %>

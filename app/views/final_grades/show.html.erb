@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Userid:</b>
+  <%= @final_grade.userID %>
+</p>
+
+<p>
+  <b>Course:</b>
+  <%= @final_grade.course %>
+</p>
+
+<p>
+  <b>Coursename:</b>
+  <%= @final_grade.coursename %>
+</p>
+
+<p>
+  <b>Grade:</b>
+  <%= @final_grade.grade %>
+</p>
+
+<p>
+  <b>Hours:</b>
+  <%= @final_grade.hours %>
+</p>
+
+
+<%= link_to 'Edit', edit_final_grade_path(@final_grade) %> |
+<%= link_to 'Back', final_grades_path %>

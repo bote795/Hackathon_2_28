@@ -1,4 +1,13 @@
 Hackathon228::Application.routes.draw do
+  resources :final_grades
+
+
+  resources :class_ind_grades
+
+
+  resources :profiles
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
